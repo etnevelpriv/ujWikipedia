@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Wiki Articles
-    </title>
+    <title>Filter</title>
     <link rel="stylesheet" href="../src/styles/style.css">
 </head>
 
 <body>
+    <form method="post">
+        <input-group>
+            <label for="views">Views</label>
+            <input type="number" min="0" required name="views" id="viewsInput">
+        </input-group>
+        <input type="submit" value="Search">
+    </form>
+
     <table>
         <tr>
             <th>Title</th>
@@ -30,14 +36,7 @@
                 <%})%>
         </tbody>
     </table>
-    <ul>
-        <li>
-            <a href="/filter">Filter</a>
-        </li>
-        <li>
-            <a href="new">Uj cikk</a>
-        </li>
-    </ul>
+
 </body>
 
 </html>
